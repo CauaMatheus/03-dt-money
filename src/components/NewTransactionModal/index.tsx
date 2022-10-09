@@ -10,6 +10,8 @@ import {
 import * as zod from 'zod'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { TransactionsContext } from '../../contexts/TransactionsContext'
+import { useContext } from 'react'
 
 const newTransactionFormSchema = zod.object({
   description: zod.string().min(1),
@@ -36,8 +38,10 @@ export function NewTransactionModal() {
     },
   })
 
+  const { createNewTransaction } = useContext(TransactionsContext)
+
   function handleCreateNewTransaction(data: INewTransactionFormInputs) {
-    console.log(data)
+    createNewTransaction(data)
     reset()
   }
 

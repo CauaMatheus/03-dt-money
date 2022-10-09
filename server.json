@@ -15,6 +15,22 @@
       "category": "Alimentação",
       "price": 60,
       "createdAt": "2020-05-21T00:00:00.005Z"
+    },
+    {
+      "description": "sla",
+      "price": 30,
+      "category": "dsadsa",
+      "type": "income",
+      "createdAt": "2022-10-09T21:38:48.308Z",
+      "id": 3
+    },
+    {
+      "description": "Teste",
+      "price": 30,
+      "category": "Testando",
+      "type": "outcome",
+      "createdAt": "2022-10-09T21:42:00.046Z",
+      "id": 4
     }
   ]
 }
